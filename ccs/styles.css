@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+}
+
+header{
+   background-color: #FDFBF8;
+   display: flex;
+   justify-content: space-between;
+   position: fixed;
+   display: grid;
+   grid-template-columns: 1fr 3fr; 
+   padding: 1rem;
+   margin: auto;
+   width: 100%;
+}
+.titulo_amana {
+   text-decoration: none;
+   font-size: larger;
+   color: #4d3a26;
+   font-weight: 700;
+}
+.nav_header{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+   gap: 15px;  
+}
+.a_header{
+   text-decoration: none;
+   color: #706F6C;
+}
+
+
+.section1_main{
+   background-color: #E0E0E0;
+   padding: 5rem 1rem;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+}
+.p_main_s1{
+   color: #4d3a26;
+   border: solid;
+   border-color: #1A1614;
+   border-width: 1px;
+   border-radius: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+footer{
+   background-color:#1A1614;
+   color: #A1A1A1;
+}
+
+.titulosfooter{
+   color: #D4B982;
+}
+
+
+.logoredes{
+   width: auto;
+   height: 10vh;
+   display: flex;
+}
+.titulo_sandalias{
+   background-image: url(../img/sandalias/sandalia_bohemia_dorada.jpg);
+   background-repeat: no-repeat;
+}
+
+.titulo_zapatillas{
+   background-image: url(../img/zapatillas/clara_colores_suaves.jpg);
+   background-size: contain;
+}
+
+.titulo_mocasines{
+   background-image: url(../img/mocasines/classic_burgundy.jpg);
+   background-size: contain;
+}
+
+.titulo_botas{
+   background-image: url(../img/botas_y_borines/chelsea_camel.jpg);
+   background-size: contain;
+}
