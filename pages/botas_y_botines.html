@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amana-Botas y Botines</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="../ccs/styles.css">
 </head>
 <body>
@@ -11,10 +12,10 @@
         <h2><a href="../index.html" class="titulo_amana">Amana</a></h2>
         <ul>
             <nav class="nav_header">
-                <li><a href="./sandalias.html">Sandalias</a></li>
-                <li><a href="./zapatillas.html">Zapatillas</a> </li>
-                <li><a href="./botas_y_botines.html">Botas y Botines</a> </li>
-                <li><a href="./mocasines.html">Mocasines</a></li>
+                <li><a href="./sandalias.html"class="a_header">Sandalias</a></li>
+                <li><a href="./zapatillas.html"class="a_header">Zapatillas</a> </li>
+                <li><a href="./botas_y_botines.html"class="a_header">Botas y Botines</a> </li>
+                <li><a href="./mocasines.html"class="a_header">Mocasines</a></li>
             </nav>
         </ul>
     </header>
@@ -38,46 +39,61 @@
         </section>
     </main>
     <footer>
-        <section>
-            <h2>Amana</h2>
+        <section class="s.footer">
+            <h2 class="titulosfooter">Amana</h2>
             <p>Calzado femenino con estilo, comodidad y elegancia para cada ocasión</p>
             <article>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15606.02116001309!2d-77.10184772533403!3d-12.077521308622954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9726e0effff%3A0xd2136ce30a8502bb!2sAv.%20de%20la%20Marina%202000!5e0!3m2!1ses-419!2spe!4v1769515342064!5m2!1ses-419!2spe" width="200" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><!--este mapa creo que se va a eliminar-->
-                <a href="https://maps.app.goo.gl/wfHXQcaBGCo2JDe48" target="_blank">Av. La Marina 2000, San Miguel, Lima, Perú</a>
-                <a href="" target="_blank">+51 123456789</a><!--todavía sin hipervínculo para wsp-->
+                <a href="https://maps.app.goo.gl/wfHXQcaBGCo2JDe48" target="_blank" id="a_footer">Av. La Marina 2000, San Miguel, Lima, Perú</a>
+                <a href="" target="_blank" id="a_footer">+51 123456789</a><!--todavía sin hipervínculo para wsp-->
+            <p>Lun - Sáb: 10:00 - 20:00</p>
             </article>
         </section>
-    <section>
-        <article>
-            <h4>Contáctanos</h4>
-            <form>
+        <section>
+            <h4 class="titulosfooter">Categorías</h4>
+            <ul>
+                <nav class="nav_footer">
+                    <li><a href="pages/sandalias.html" class="a_footer">Sandalias</a></li>
+                    <li><a href="pages/zapatillas.html " class="a_footer">Zapatillas</a> </li>
+                    <li><a href="pages/botas_y_botines.html" class="a_footer" >Botas y Botines</a> </li>
+                    <li><a href="pages/mocasines.html" class="a_footer">Mocasines</a></li>
+                </nav>
+            </ul>
+        </section>
+        <section>
+            <article>
+                <h4 class="titulosfooter">Contáctanos</h4>
+                <form class="form_footer">
                 <label></label>
                 <input type="text" placeholder="Tu Nombre">
                 <label></label>
                 <input type="email" placeholder="Tu correo">
                 <textarea placeholder="Tu mensaje"></textarea>
                 <input type="submit" value="Enviar mensaje">
-            </form>
-        </article>
-            <h5>Siguenos</h5>
-            
+                </form>
+            </article>
+                <h5 class="titulosfooter">Siguenos</h5>
                 <nav>
                     <ul>
                         <li>
-                            <a href="https://www.instagram.com/" target="_blank">
-                                <img src="../img/logos_redes_sociales/instagram.jpg" alt="logotipo instagram">
+                            <a href="https://www.instagram.com/" target="_blank" >
+                                <img src="./img/logos_redes_sociales/instagram.jpg" alt="logotipo instagram" class="logoredes">
                             </a>
                         </li>
                         <li>
-                            <a href="https://www.tiktok.com/es-419/" target="_blank">
-                            <img src="../img/logos_redes_sociales/tiktok.png" alt="logotipo tiktok">
+                            <a href="https://www.tiktok.com/es-419/" target="_blank" >
+                            <img src="./img/logos_redes_sociales/tiktok.png" class="logoredes" alt="logotipo tiktok">
                             </a>
                         </li>
                     </ul>
                 </nav>
             </article>
+            <h5 class="titulosfooter">Métodos de Pago</h5>
+            <p>Visa / Mastercard</p>
+            <p>Contra entrega</p>
         </section>
-        <p>2026 Amana. Todos los derechos son reservados</p>
+        <p>©2026 Amana. Todos los derechos son reservados</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
