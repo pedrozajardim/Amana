@@ -19,6 +19,9 @@ img{
 li{
    list-style: none;
 }
+.section_bootstraps{
+   padding: 2rem;
+}
 /*header*/
 header{
    background-color: #FDFBF8;
@@ -137,9 +140,6 @@ footer{
    text-decoration: none;
 }
 
-.section_bootstraps{
-   padding: 2rem;
-}
 header, .section_bootstraps{
    z-index: 1030 !important;
 }

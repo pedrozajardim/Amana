@@ -1,0 +1,76 @@
+.section1_main {
+    background-color: #F5F5DC;
+    padding: 5rem 2rem;
+    height: 120vh;
+    width: auto;
+}
+
+.p_main_s1 {
+    color: #D9A239;
+    background-color: #FDF2E3;
+    border-color: #FDF2E3;
+    border-radius: 30px;
+    padding: 4px 16px;
+}
+
+.h1_main_s1 {
+    font-size: 3rem;
+    font-weight: 700 bolder;
+}
+
+.tu_historia {
+    color: #6F4E37;
+}
+
+.sobre_nosotros {
+    text-decoration: none;
+    color: #6F4E37;
+    background-color: #FDF2E3;
+    border-color: #6F4E37;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.section2_main_index {
+    padding: 2rem;
+    margin: auto;
+    font-size: small;
+    color: #F9F9F9;
+    background-color: #6F4E37;
+    display: flex;
+    gap: 2em;
+}
+
+#p_color_gris {
+    color: #D3C7B5;
+}
+
+.section_sobre_nosotros {
+    padding: 2rem;
+    margin: auto;
+    color: #757575;
+    background: #FFFFFF;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 6fr 1fr;
+}
+
+#sobre_nosotros {
+    background-color: #E8F0E9;
+    color: #4A6D55;
+}
+
+#h2_sobre_nosotros {
+    font-size: xx-large;
+    color: #1A1A1A;
+}
+
+#h4_sobre_nosotros {
+    color: #1A1A1A;
+}
+
+.article_sobre_nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

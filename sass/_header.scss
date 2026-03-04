@@ -1,0 +1,34 @@
+header {
+    background-color: #FDFBF8;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    margin: auto;
+    width: 100%;
+}
+
+.titulo_amana {
+    text-decoration: none;
+    font-size: larger;
+    color: #4d3a26;
+    font-weight: 700;
+}
+
+.nav_header {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.a_header {
+    text-decoration: none;
+    color: #706F6C;
+}
+
+header,
+.section_bootstraps {
+    z-index: 1030 !important;
+}
