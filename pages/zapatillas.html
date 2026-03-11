@@ -13,23 +13,72 @@
 <body>
     <header>
         <h2><a href="../index.html" class="titulo_amana">Amana</a></h2>
-        <ul>
-            <nav class="nav_header">
-                <li><a href="./sandalias.html" class="a_header">Sandalias</a></li>
-                <li><a href="./zapatillas.html" class="a_header">Zapatillas</a> </li>
-                <li><a href="./botas_y_botines.html" class="a_header">Botas y Botines</a> </li>
-                <li><a href="./mocasines.html" class="a_header">Mocasines</a></li>
+        <section>
+            <ul>
+                <nav class="nav_header">
+                    <li><a href="./sandalias.html" class="a_header">Sandalias</a></li>
+                    <li><a href="./zapatillas.html" class="a_header">Zapatillas</a> </li>
+                    <li><a href="./botas_y_botines.html" class="a_header">Botas y Botines</a> </li>
+                    <li><a href="./mocasines.html" class="a_header">Mocasines</a></li>
+                </nav>
+            </ul>
+                    <ul>
+            <nav class="nav_header_mobile">
+                <nav class="navbar bg-body-tertiary fixed-top">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">Amana</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                            aria-labelledby="offcanvasNavbarLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Amana</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./pages/sandalias.html">Sandalias</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./pages/zapatillas.html">Zapatillas</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./pages/botas_y_botines.html">Botas y Botines</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="./pages/mocasines.html">Mocasines</a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
             </nav>
         </ul>
+        </section>
+<!--La siguiente section es para emular un carrito de compras para futuro, sera implementado en los siguientes cursos, si llevaría alguna descalificacíon informenme para quitarlo-->
+        <section>
+            <ul class="ul_button">
+                <button class="button_header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg></button>
+                <button class="button_header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg></button>
+                <button class="button_header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/></svg></button>
+                <button class="button_header"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"><path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/></svg></button>
+            </ul>
+        </section>
     </header>
     <main>
         <section class="titulo_zapatillas">
-            <a href="../index.html">Volver al Inicio</a>
-            <h1>Zapatillas</h1>
-            <p>Comodidad y estilo urbano. Zapatillas diseñadas para acompañarte en cada paso de tu día.</p>
+            <article class="article_titulos_z">
+                <h1 id="h1_A_titulo_z">Zapatillas</h1>
+                <p id="p_A_titulo_z">Comodidad y estilo urbano. Zapatillas diseñadas para acompañarte en cada paso de tu día.</p>
+            </article>
         </section>
-        <section>
-            <article>
+        <section class="S_main2_page_z">
+            <article class="A_main2_page_z">
                 <div>
                     <h4>Ultra Cómodas</h4>
                     <p>Perfectas para el día a día activo</p>
@@ -43,7 +92,7 @@
                     <p>Durabilidad garantizada en cada paso.</p>
                 </div>
             </article>
-            <article>
+            <article class="A_main2_page_z">
                 <div>
                     <h5>Consejo de Tallas</h5>
                     <p>Para sandalias, recomendamos elegir tu talla habitual. Si tienes pie ancho, considera media talla
@@ -79,13 +128,13 @@
         </section>
     </main>
     <footer>
-        <section class="s.footer">
+        <section class="s_footer">
             <h2 class="titulosfooter">Amana</h2>
             <p>Calzado femenino con estilo, comodidad y elegancia para cada ocasión</p>
             <article>
-                <a href="https://maps.app.goo.gl/wfHXQcaBGCo2JDe48" target="_blank" id="a_footer">Av. La Marina 2000,
-                    San Miguel, Lima, Perú</a>
-                <a href="" target="_blank" id="a_footer">+51 123456789</a><!--todavía sin hipervínculo para wsp-->
+                <a href="https://maps.app.goo.gl/wfHXQcaBGCo2JDe48" target="_blank" id="a_footer">Av. La Marina 2000,San Miguel, Lima, Perú</a>
+                <br>
+                <a href="https://web.whatsapp.com/" target="_blank" id="a_footer">+51 123456789</a>
                 <p>Lun - Sáb: 10:00 - 20:00</p>
             </article>
         </section>

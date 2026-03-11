@@ -1,28 +1,26 @@
-.titulo_sandalias {
-    padding: 5rem 2rem;
-    background-image: url(../img/sandalias/sandalia_bohemia_dorada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-}
-.article_titulos {
-    color: #FFFFFF;
-    padding: 7rem 0rem 0rem 0rem;
-}
-.a_titulos {
-    text-decoration: none;
-    color: #FFFFFF;
-}
-#h1_A_titulos{
-    font-size: 4rem;
-    font-weight: 600;
-}
-#p_A_titulos{
-    font-weight: 700;
-}
-.S_main2_page{
-    background-color: #EFECE7;
-    display: flex;
-    flex-direction: column;
-}
+@use "generales" as g;
+    main{
+        .titulo_sandalias {
+            @extend %titulo_pages;
+            background-image: url(../img/sandalias/sandalia_bohemia_dorada.jpg);
+            .article_titulos {
+                color: #FFFFFF;
+                padding: 7rem 0rem 0rem 0rem;
+                #h1_A_titulos{
+                    font-size: 4rem;
+                    font-weight: 600;
+                }
+                #p_A_titulos{
+                    font-weight: 700;
+                }
+            }
+        }
+        .S_main2_page{
+            background-color: #EBE6E3;
+            .A_main2_pages{
+                padding: 1rem;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }

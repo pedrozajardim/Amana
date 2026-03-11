@@ -1,34 +1,70 @@
+@use "generales" as g;
+
 header {
     background-color: #FDFBF8;
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-items: center;
     padding: 1rem;
     margin: auto;
     width: 100%;
-}
+    z-index: 100;
+    .titulo_amana {
+        text-decoration: none;
+        font-size: larger;
+        color: #4d3a26;
+        font-weight: 700;
+    }
 
-.titulo_amana {
-    text-decoration: none;
-    font-size: larger;
-    color: #4d3a26;
-    font-weight: 700;
-}
+    .nav_header {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .a_header {
+            text-decoration: none;
+            color: #706F6C;
+            &:hover {
+                color: #4d3a26
+            }
+        }
+    }
 
-.nav_header {
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-}
+    .nav_header_mobile {
+        display: none;
+    }
 
-.a_header {
-    text-decoration: none;
-    color: #706F6C;
-}
+    .ul_button {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .button_header {
+            color: #4d3a26;
+            background-color: #FDFBF8;
+            border: 0;
+            &:hover {
+                color: #FFFFFF;
+                background-color: #F1EBE6;
+            }
+        }
+    }
 
-header,
-.section_bootstraps {
-    z-index: 1030 !important;
+    @include g.tablet {
+        .ul_button{
+            display: none;
+        }
+    }
+
+    @include g.mobile {
+        .nav_header_mobile {
+            display: block;
+            width: 100%;
+        }
+
+        .navbar-brand {
+            color: #4d3a26;
+            font-weight: 700;
+        }
+    }
 }

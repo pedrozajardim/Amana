@@ -1,25 +1,29 @@
 footer {
     background-color: #1E1B18;
     color: #BDBDBD;
-    display: flex;
-    flex-direction: row;
-}
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
 
-.titulosfooter {
-    color: #FFFFFF;
-}
+    .s_footer{
+        padding: 1rem;
+    
+        .titulosfooter {
+            color: #FFFFFF;
+        }
 
-#a_footer {
-    text-decoration: none;
-    color: #BDBDBD;
-}
+            #a_footer {
+                text-decoration: none;
+                color: #BDBDBD;
+            }
+    }
 
-.logoredes {
-    width: auto;
-    height: 5vh;
-}
+    .logoredes {
+        width: auto;
+        height: 5vh;
+    }
 
-.a_footer {
-    color: #BDBDBD;
-    text-decoration: none;
+    .a_footer {
+        color: #BDBDBD;
+        text-decoration: none;
+    }
 }

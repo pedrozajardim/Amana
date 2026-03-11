@@ -1,39 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-header {
-  background-color: #FDFBF8;
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 1rem;
-  margin: auto;
-  width: 100%;
-}
-
-.titulo_amana {
-  text-decoration: none;
-  font-size: larger;
-  color: #4d3a26;
-  font-weight: 700;
-}
-
-.nav_header {
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-}
-
-.a_header {
-  text-decoration: none;
-  color: #706F6C;
-}
-
-header,
-.section_bootstraps {
-  z-index: 1030 !important;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -46,7 +11,7 @@ p {
 }
 
 img {
-  height: 50vb;
+  height: 40vh;
   width: auto;
   border-radius: 30px;
 }
@@ -58,67 +23,149 @@ li {
 .section_bootstraps {
   padding: 2rem;
 }
+.section_bootstraps .card-img-top {
+  height: 50vh;
+  width: auto;
+}
+
+main .titulo_botas, main .titulo_mocasines, main .titulo_zapatillas, main .titulo_sandalias {
+  padding: 5rem 2rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+}
+
+header {
+  background-color: #FDFBF8;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: auto;
+  width: 100%;
+  z-index: 100;
+}
+header .titulo_amana {
+  text-decoration: none;
+  font-size: larger;
+  color: #4d3a26;
+  font-weight: 700;
+}
+header .nav_header {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header .nav_header .a_header {
+  text-decoration: none;
+  color: #706F6C;
+}
+header .nav_header .a_header:hover {
+  color: #4d3a26;
+}
+header .nav_header_mobile {
+  display: none;
+}
+header .ul_button {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+header .ul_button .button_header {
+  color: #4d3a26;
+  background-color: #FDFBF8;
+  border: 0;
+}
+header .ul_button .button_header:hover {
+  color: #FFFFFF;
+  background-color: #F1EBE6;
+}
+@media (min-width: 480px) and (max-width: 960px) {
+  header .ul_button {
+    display: none;
+  }
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  header .nav_header_mobile {
+    display: block;
+    width: 100%;
+  }
+  header .navbar-brand {
+    color: #4d3a26;
+    font-weight: 700;
+  }
+}
 
 footer {
   background-color: #1E1B18;
   color: #BDBDBD;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-
-.titulosfooter {
+footer .s_footer {
+  padding: 1rem;
+}
+footer .s_footer .titulosfooter {
   color: #FFFFFF;
 }
-
-#a_footer {
+footer .s_footer #a_footer {
   text-decoration: none;
   color: #BDBDBD;
 }
-
-.logoredes {
+footer .logoredes {
   width: auto;
   height: 5vh;
 }
-
-.a_footer {
+footer .a_footer {
   color: #BDBDBD;
   text-decoration: none;
 }
 
-.section1_main {
+main .section1_main {
   background-color: #F5F5DC;
-  padding: 5rem 2rem;
   height: 120vh;
   width: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
-
-.p_main_s1 {
+main .section1_main .div_parte1_main_index {
+  padding: 2rem;
+}
+main .section1_main .div_parte1_main_index .p_main_s1 {
   color: #D9A239;
   background-color: #FDF2E3;
   border-color: #FDF2E3;
-  border-radius: 30px;
-  padding: 4px 16px;
+  display: inline;
 }
-
-.h1_main_s1 {
-  font-size: 3rem;
-  font-weight: 700 bolder;
+main .section1_main .div_parte1_main_index .h1_main_s1 {
+  font-size: 4.5rem;
+  font-weight: 700;
 }
-
-.tu_historia {
+main .section1_main .div_parte1_main_index .h1_main_s1 .tu_historia {
   color: #6F4E37;
 }
-
-.sobre_nosotros {
+main .section1_main .div_parte1_main_index .p2_main_s1 {
+  color: #5a5550;
+}
+main .section1_main .div_parte1_main_index .sobre_nosotros {
+  font-size: 1.5rem;
   text-decoration: none;
   color: #6F4E37;
-  background-color: #FDF2E3;
+  background-color: #FFFFFF;
   border-color: #6F4E37;
-  border-radius: 30px;
-  padding: 10px;
 }
-
-.section2_main_index {
+main .section1_main .div_parte1_main_index .sobre_nosotros:hover {
+  color: #FFFFFF;
+  background-color: #6F4E37;
+}
+main .section1_main .div_img_s1 {
+  padding: 2rem;
+}
+main .section2_main_index {
   padding: 2rem;
   margin: auto;
   font-size: small;
@@ -127,103 +174,190 @@ footer {
   display: flex;
   gap: 2em;
 }
-
-#p_color_gris {
+main .section2_main_index #p_color_gris {
   color: #D3C7B5;
 }
-
-.section_sobre_nosotros {
+main .section3_main_index {
   padding: 2rem;
-  margin: auto;
+  height: 45rem;
   color: #757575;
   background: #FFFFFF;
   display: grid;
+  justify-items: center;
+  align-items: center;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 6fr 1fr;
+  grid-template-rows: 7fr 1fr;
 }
-
-#sobre_nosotros {
+main .section3_main_index .sobre_nosotros_s3 {
   background-color: #E8F0E9;
   color: #4A6D55;
+  grid-column: 2/3;
+  grid-row: 1/1;
 }
-
-#h2_sobre_nosotros {
+main .section3_main_index #h2_sobre_nosotros {
   font-size: xx-large;
   color: #1A1A1A;
+  grid-column: 2/3;
+  grid-row: 2/2;
 }
-
-#h4_sobre_nosotros {
-  color: #1A1A1A;
+main .section3_main_index .p_s3_m_index {
+  grid-column: 2/3;
+  grid-row: 3/3;
 }
-
-.article_sobre_nosotros {
+main .section3_main_index .article_sobre_nosotros {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  grid-column: 2/3;
+  grid-row: 4/6;
+}
+main .section3_main_index .article_sobre_nosotros #h4_sobre_nosotros {
+  color: #1A1A1A;
+}
+main .section3_main_index #img_s3_m_index {
+  grid-column: 1/2;
+  grid-row: 1/6;
+  height: 80vh;
+  width: auto;
+}
+main .section4_main_index {
+  color: #F9F9F9;
+  background-color: #6F4E37;
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+main .section4_main_index .h2_s4_M_index {
+  font-size: 40px;
+}
+@media (min-width: 300px) and (max-width: 479px) {
+  main .section1_main {
+    height: auto;
+    width: 41.5rem;
+  }
+  main .section1_main .div_parte1_main_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  main .section1_main .div_img_s1 {
+    display: none;
+  }
+  main .section2_main_index {
+    height: auto;
+    width: 41.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  main .section3_main_index {
+    height: auto;
+    width: 41.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  main .section3_main_index #img_s3_m_index {
+    width: 100%;
+    height: auto;
+  }
+  main .section3_main_index .section4_main_index {
+    height: auto;
+    width: 41.5rem;
+  }
 }
 
-.titulo_sandalias {
-  padding: 5rem 2rem;
+main .titulo_sandalias {
   background-image: url(../img/sandalias/sandalia_bohemia_dorada.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
 }
-
-.article_titulos {
+main .titulo_sandalias .article_titulos {
   color: #FFFFFF;
   padding: 7rem 0rem 0rem 0rem;
 }
-
-.a_titulos {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-
-#h1_A_titulos {
+main .titulo_sandalias .article_titulos #h1_A_titulos {
   font-size: 4rem;
   font-weight: 600;
 }
-
-#p_A_titulos {
+main .titulo_sandalias .article_titulos #p_A_titulos {
   font-weight: 700;
 }
-
-.S_main2_page {
-  background-color: #EFECE7;
+main .S_main2_page {
+  background-color: #EBE6E3;
+}
+main .S_main2_page .A_main2_pages {
+  padding: 1rem;
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
 }
 
-.titulo_zapatillas {
-  padding: 5rem 2rem;
+main .titulo_zapatillas {
   background-image: url(../img/zapatillas/clara_colores_suaves.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+}
+main .titulo_zapatillas .article_titulos_z {
+  color: #4d3a26;
+  padding: 7rem 0rem 0rem 0rem;
+}
+main .titulo_zapatillas .article_titulos_z #h1_A_titulo_z {
+  font-size: 4rem;
+  font-weight: 600;
+}
+main .titulo_zapatillas .article_titulos_z #p_A_titulo_z {
+  font-weight: 700;
+}
+main .S_main2_page_z {
+  background-color: #EBE6E3;
+}
+main .S_main2_page_z .A_main2_page_z {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.titulo_mocasines {
-  padding: 5rem 2rem;
-  background-image: url(../img/mocasines/classic_burgundy.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+main .titulo_mocasines {
+  background-image: url(../img/mocasines/mocasines_hombre.jpeg);
+}
+main .titulo_mocasines .article_titulo_m {
+  color: #EBE6E3;
+  padding: 7rem 0rem 0rem 0rem;
+}
+main .titulo_mocasines .article_titulo_m #h1_A_titulo_m {
+  font-size: 4rem;
+  font-weight: 600;
+}
+main .titulo_mocasines .article_titulo_m #p_A_titulo_m {
+  font-weight: 700;
+}
+main .S_main2_page_m {
+  background-color: #EBE6E3;
+}
+main .S_main2_page_m .A_main2_page_m {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
-.titulo_botas {
-  padding: 5rem 2rem;
+main .titulo_botas {
   background-image: url(../img/botas_y_borines/chelsea_camel.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  min-height: 400px;
+}
+main .titulo_botas .article_titulo_b {
+  color: #FFFFFF;
+  padding: 7rem 0rem 0rem 0rem;
+}
+main .titulo_botas .article_titulo_b #h1_A_titulo_b {
+  font-size: 4rem;
+  font-weight: 600;
+}
+main .titulo_botas .article_titulo_b #p_A_titulo_b {
+  font-weight: 700;
+}
+main .S_main2_page_b {
+  background-color: #EBE6E3;
+}
+main .S_main2_page_b .A_main2_page_b {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*# sourceMappingURL=styles.css.map */

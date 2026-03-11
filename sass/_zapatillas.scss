@@ -1,9 +1,27 @@
-.titulo_zapatillas {
-    padding: 5rem 2rem;
-    background-image: url(../img/zapatillas/clara_colores_suaves.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    min-height: 400px;
-}
+@use "generales" as g;
+    main {
+        .titulo_zapatillas {
+            @extend %titulo_pages;
+                background-image: url(../img/zapatillas/clara_colores_suaves.jpg);
+            .article_titulos_z {
+                color: #4d3a26;
+                padding: 7rem 0rem 0rem 0rem;
+                #h1_A_titulo_z {
+                    font-size: 4rem;
+                    font-weight: 600;
+                }
+                #p_A_titulo_z {
+                    font-weight: 700;
+                }
+            }
+        }
+        .S_main2_page_z {
+            background-color: #EBE6E3;
+            .A_main2_page_z{
+                padding: 1rem;
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    
