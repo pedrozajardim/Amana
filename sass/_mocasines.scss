@@ -4,24 +4,49 @@ main {
     .titulo_mocasines {
         @extend %titulo_pages;
         background-image: url(../img/mocasines/mocasines_hombre.jpeg);
+
         .article_titulo_m {
             color: #EBE6E3;
             padding: 7rem 0rem 0rem 0rem;
+
             #h1_A_titulo_m {
                 font-size: 4rem;
                 font-weight: 600;
             }
+
             #p_A_titulo_m {
                 font-weight: 700;
             }
         }
     }
+
     .S_main2_page_m {
         background-color: #EBE6E3;
+
         .A_main2_page_m {
             padding: 1rem;
             display: flex;
             justify-content: space-around;
+        }
+    }
+
+    @include g.mobile {
+        .titulo_mocasines {
+            padding: 0;
+            .article_titulo_m {
+                padding: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                #h1_A_titulo_m {
+                    font-size: 2rem;
+                }
+            }
+        }
+        .S_main2_page_m {
+            .A_main2_page_m {
+                flex-direction: column;
+            }
         }
     }
 }

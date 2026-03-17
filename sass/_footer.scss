@@ -1,3 +1,4 @@
+@use "generales" as g;
 footer {
     background-color: #1E1B18;
     color: #BDBDBD;
@@ -17,13 +18,18 @@ footer {
             }
     }
 
-    .logoredes {
-        width: auto;
-        height: 5vh;
+        .logoredes {
+            width: auto;
+            height: 5vh;
     }
 
     .a_footer {
         color: #BDBDBD;
         text-decoration: none;
+    }
+    @include g.mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
     }
 }
