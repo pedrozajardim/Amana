@@ -51,6 +51,7 @@ header {
     }
 
     @include g.tablet {
+        flex-direction: column;
         .ul_button{
             display: none;
         }
@@ -64,8 +65,10 @@ header {
             display: none;
         }
         .nav_header{
-            flex-direction: column;
-            gap: 1px;
+            display: none;
+        }
+        .nav_header_mobile{
+            display: block;
         }
     }
 }

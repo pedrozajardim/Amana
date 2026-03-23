@@ -8,8 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="./img/logos_pagina/logo amana monograma.jpg" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="description"
         content="Amana: Calzado de cuero peruano que redefine la elegancia. Inspirados en la tradición y el diseño contemporáneo. Hechos en Perú con la mejor calidad. ¡Compra aquí!">
     <meta name="keywords"
@@ -35,7 +36,7 @@
                     <li><a href="pages/mocasines.html" class="a_header">Mocasines</a></li>
                 </nav>
             </ul>
-<!--             <ul>
+            <ul>
                 <nav class="nav_header_mobile">
                     <nav class="navbar bg-body-tertiary fixed-top">
                         <div class="container-fluid">
@@ -75,7 +76,7 @@
                         </div>
                     </nav>
                 </nav>
-            </ul> -->
+            </ul>
         </section>
         <!--La siguiente section es para emular un carrito de compras para futuro, sera implementado en los siguientes cursos, si llevaría alguna descalificacíon informenme para quitarlo-->
         <section>
@@ -117,36 +118,37 @@
                     </svg></a>
             </div>
             <div class="div_img_s1">
-                <img src="./img/botas_y_borines/chelsea_camel.webp" alt="botas chelsea chelsea_camel">
-                <img src="./img/mocasines/classic_burgundy_1.webp" alt="mocasines classic burgundy">
-                <img src="./img/sandalias/sandalia_bohemia_dorada.webp" alt="sandalia bohemia dorada">
-                <img src="./img/zapatillas/clara_colores_suaves.webp" alt="zapatillas colores suaves">
+                <img class="animate__animated animate__pulse" src="./img/botas_y_borines/chelsea_camel.webp"
+                    alt="botas chelsea chelsea_camel">
+                <img class="animate__animated animate__pulse" src="./img/mocasines/classic_burgundy_1.webp"
+                    alt="mocasines classic burgundy">
+                <img class="animate__animated animate__pulse" src="./img/sandalias/sandalia_bohemia_dorada.webp"
+                    alt="sandalia bohemia dorada">
+                <img class="animate__animated animate__pulse" src="./img/zapatillas/clara_colores_suaves.webp"
+                    alt="zapatillas colores suaves">
             </div>
         </section>
-        <section class="section2_main_index" data-aos="fade-up">
-            <div>
+        <section class="section2_main_index">
+            <div class="div_s2_index" data-aos="fade-up">
                 <h3>Diseños Exclusivos</h3>
-                <br>
                 <p id="p_color_gris">Modelos únicos y tendencias actuales para cada estilo de mujer</p>
             </div>
-            <div>
+            <div class="div_s2_index" data-aos="fade-up">
                 <h3>Envío Gratis</h3>
-                <br>
                 <p id="p_color_gris">Envío gratis en compras mayores a S/ 200 a todo el Perú</p>
             </div>
-            <div>
+            <div class="div_s2_index" data-aos="fade-up">
                 <h3>Garantía de Calidad</h3>
-                <br>
                 <p id="p_color_gris">Garantizamos la calidad y comodidad de todo nuestro calzado</p>
             </div>
-            <div>
-                <div>
-                    <h3>Atención Personalizada</h3>
-                    <br>
-                    <p id="p_color_gris">Nuestro equipo está listo para ayudarte a encontrar tu talla perfecta</p>
-                </div>
+            <div class="div_s2_index" data-aos="fade-up">
+                <h3>Atención Personalizada</h3>
+                <p id="p_color_gris">Nuestro equipo está listo para ayudarte a encontrar tu talla perfecta</p>
+            </div>
         </section>
         <section class="section3_main_index" id="sobrenosotros">
+            <img id="img_s3_m_index" data-aos="fade-right" src="./img/zapatillas/zapatillas_men_inicio.webp"
+                alt="zapatillas_para_sección_so bre_nosotros">
             <h4 class="sobre_nosotros_s3"> Sobre Nosotros</h4>
             <h2 id="h2_sobre_nosotros">Pasión por el calzado femenino de calidad</h2>
             <p class="p_s3_m_index">En Amana, entendemos que el calzado es más que un accesorio: es una extensión de tu
@@ -170,9 +172,7 @@
                     <h4 id="h4_sobre_nosotros">Calidad Premium</h4>
                     <p>Materiales selectos</p>
                 </div>
-            </article>
-            <img id="img_s3_m_index" data-aos="fade-right" src="./img/zapatillas/zapatillas_men_inicio.webp"
-                alt="zapatillas_para_sección_so bre_nosotros">
+/            </article>
         </section>
         <section class="section4_main_index" data-aos="fade-up">
             <h2 class="h2_s4_M_index">Únete a Nuestra Comunidad</h2>
@@ -185,9 +185,9 @@
             </form>
 
         </section>
-    </main> 
+    </main>
     <footer>
-        <section class="s_footer" >
+        <section>
             <h2 class="titulosfooter">Amana</h2>
             <p>Calzado femenino con estilo, comodidad y elegancia para cada ocasión</p>
             <article>
@@ -209,8 +209,8 @@
                 </nav>
             </ul>
         </section>
-        <section>
-            <article>
+        <section class="s_conocernos_footer">
+            <article class="ar_sc_footer">
                 <h4 class="titulosfooter">Contáctanos</h4>
                 <form class="form_footer">
                     <label></label>
@@ -220,31 +220,43 @@
                     <br>
                     <textarea placeholder="Tu mensaje"></textarea>
                     <label></label>
+                    <br>
                     <input type="submit" value="Enviar mensaje">
                 </form>
+                <br>
             </article>
-            <h5 class="titulosfooter">Siguenos</h5>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/" target="_blank">
-                            <img src="./img/logos_redes_sociales/instagram.webp" alt="logotipo instagram"
-                                class="logoredes">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.tiktok.com/es-419/" target="_blank">
-                            <img src="./img/logos_redes_sociales/tiktok.webp" class="logoredes" alt="logotipo tiktok">
-                        </a>
-                    </li>
-                </ul>
-            </nav>
+            <article>
+                <h5 class="titulosfooter">Siguenos</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://www.instagram.com/" target="_blank" class="logosredes">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.tiktok.com/es-419/" target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <br>
+                <h5 class="titulosfooter">Métodos de Pago</h5>
+                <p>Visa / Mastercard</p>
+                <p>Contra entrega</p>
             </article>
-            <h5 class="titulosfooter">Métodos de Pago</h5>
-            <p>Visa / Mastercard</p>
-            <p>Contra entrega</p>
+            <br>
         </section>
-        <p>©2026 Amana. Todos los derechos son reservados</p>
+        <p class="copyright">©2026 Amana. Todos los derechos son reservados</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
