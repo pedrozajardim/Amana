@@ -40,7 +40,7 @@ header {
         flex-direction: row;
         gap: 20px;
         .button_header {
-            color: #4d3a26;
+            color: g.$marron;
             background-color: #FDFBF8;
             border: 0;
             &:hover {
@@ -61,6 +61,9 @@ header {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        .titulo_amana{
+            display: none;
+        }
         .ul_button{
             display: none;
         }

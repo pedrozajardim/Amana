@@ -24,7 +24,7 @@ main {
                 font-weight: 700;
 
                 .tu_historia {
-                    color: #6F4E37;
+                    color: g.$marron;
                 }
             }
 
@@ -36,13 +36,13 @@ main {
             .sobre_nosotros {
                 font-size: 1.5rem;
                 text-decoration: none;
-                color: #6F4E37;
+                color: g.$marron;
                 background-color: #FFFFFF;
-                border-color: #6F4E37;
+                border-color: g.$marron;
 
                 &:hover {
                     color: #FFFFFF;
-                    background-color: #6F4E37;
+                    background-color: g.$marron;
                 }
             }
         }
@@ -125,7 +125,7 @@ main {
 
     .section4_main_index {
         color: #F9F9F9;
-        background-color: #6F4E37;
+        background-color: g.$marron;
         padding: 6rem;
         display: flex;
         flex-direction: column;
