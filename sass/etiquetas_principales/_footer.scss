@@ -1,0 +1,73 @@
+@use "../generales" as g;
+
+footer {
+    background-color: #1E1B18;
+    color: #BDBDBD;
+    display: grid;
+    padding: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+
+    .titulosfooter {
+        color: #FFFFFF;
+    }
+
+    #a_footer {
+        text-decoration: none;
+        color: #BDBDBD;
+    }
+
+    .s_contacto_footer {
+        .form_footer {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 5px;
+
+            .inp_footer {
+                background-color: #36302A;
+                color: #938C85;
+                border-color: #5C554F;
+            }
+
+            .inp_footer_button {
+                background-color: #E1A631;
+                padding: 5px;
+            }
+        }
+    }
+
+    .nav_footer {
+        list-style: none;
+
+        .a_footer {
+            color: #BDBDBD;
+            text-decoration: none;
+        }
+    }
+
+    .ul_redes {
+        list-style: none;
+    }
+
+    .copyright {
+        grid-column: 1/2;
+    }
+
+    @include g.tablet {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        padding: 2rem;
+
+        .s_contacto_footer {
+            display: grid;
+            grid-auto-flow: column;
+        }
+    }
+
+    @include g.mobile {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+    }
+}

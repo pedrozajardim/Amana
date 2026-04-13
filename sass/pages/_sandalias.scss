@@ -1,46 +1,46 @@
-@use "generales" as g;
-    main {
-        .titulo_zapatillas {
+@use "../generales" as g;
+    main{
+        .titulo_sandalias {
             @extend %titulo_pages;
-                background-image: url(../img/zapatillas/clara_colores_suaves.webp);
-            .article_titulos_z {
-                color: g.$marron;
+            background-image: url(../img/sandalias/sandalia_bohemia_dorada.webp);
+            .article_titulos {
+                color: #FFFFFF;
                 padding: 7rem 0rem 0rem 0rem;
-                #h1_A_titulo_z {
+                #h1_a_titulos{
                     font-size: 4rem;
-                    font-weight: 600;
-                }
-                #p_A_titulo_z {
                     font-weight: 700;
+                }
+                #p_a_titulos{
+                    font-size: 1.5rem;
+                    font-weight: 300;
                 }
             }
         }
-        .S_main2_page_z {
+        .s_main2_page{
             background-color: #EBE6E3;
-            .A_main2_page_z{
+            .a_main2_pages{
                 padding: 1rem;
                 display: flex;
                 justify-content: space-around;
             }
         }
-            @include g.mobile{
-            .titulo_zapatillas{
+        @include g.mobile{
+            .titulo_sandalias{
                 padding: 0;
-                .article_titulos_z{
+                .article_titulos{
                     padding: 1rem;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    #h1_A_titulo_z{
+                    #h1_A_titulos{
                         font-size: 2rem;
                     }
                 }
             }
-            .S_main2_page_z{
-                .A_main2_page_z{
+            .s_main2_page{
+                .a_main2_pages{
                     flex-direction: column;
                 }
             }
         }
     }
-    

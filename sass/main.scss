@@ -1,10 +1,10 @@
 // sass --watch sass/main.scss css/styles.css
 
-@use"header";
+@use"etiquetas_principales/header";
 @use"generales";
-@use"footer";
-@use"index";
-@use"sandalias";
-@use"zapatillas";
-@use"mocasines";
-@use"botas";
+@use"etiquetas_principales/footer";
+@use"pages/index";
+@use"pages/sandalias";
+@use"pages/zapatillas";
+@use"pages/mocasines";
+@use"pages/botas";
